@@ -1,0 +1,9 @@
+# run every 30 minutes and limit /tmp/file/storage with 100 megabytes
+*/30 * * * * /bin/bash limit-dir-by-size.sh /tmp/file/storage 100
+
+# run every 30 minutes and limit /tmp/file/storage with 30% of the disk
+*/30 * * * * /bin/bash limit-dir-by-percentage.sh /tmp/file/storage 30
+
+# run every 30 minutes and limit /tmp/file/storage with 50 files
+*/30 * * * * /bin/bash limit-dir-by-files-number.sh /tmp/file/storage 50
+
